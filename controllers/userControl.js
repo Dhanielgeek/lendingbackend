@@ -1,8 +1,8 @@
-import userModel from "../models/userModel";
-import nodemailer from "nodemailer";
+const userModel = require( "../models/userModel");
+const nodemailer = require ("nodemailer");
 
 // Create a new user and send email
-export const createUser = async (req, res) => {
+exports.createUser = async (req, res) => {
   const {
     firstName,
     lastName,
